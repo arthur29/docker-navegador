@@ -1,4 +1,4 @@
-# Docker Firefox
+# Docker Google Chrome
 
 ### Xorg
 
@@ -10,10 +10,10 @@ To run xorg app from container  is necessary to execute to enable another hosts 
 
 Build the image in the current directory
 
-```docker build -t firefox .```
+```docker build -t google-chrome .```
 
 ### Running
 
 Then execute
 
-```docker run --rm -d -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v ~/.Xauthority:/root/.Xauthority firefox```
+```docker run --rm -d -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v ~/.Xauthority:/root/.Xauthority google-chrome```
